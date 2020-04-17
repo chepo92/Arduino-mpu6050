@@ -76,7 +76,7 @@ void setup()
 void loop()
 {
   int error;
-  double dT;
+  //double dT;
   double ax, ay, az;
   unsigned long start_time, end_time;
 
@@ -239,4 +239,3 @@ int i2c_write_reg(int addr, int reg, uint8_t data)
   error = i2c_write(addr, reg, &data, 1);
   return (error);
 }
-
